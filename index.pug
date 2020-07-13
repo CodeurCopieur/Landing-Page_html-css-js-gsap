@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    title Landing page
+
+    link(rel="stylesheet", href="./assets/css/index.css")
+    link(rel="stylesheet", href="./assets/css/style.css")
+    
+
+    script(src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js")
+  body
+      header
+        .wrapper
+          .pattern
+          nav
+            .logo
+              ion-icon(name="infinite")
+            .menu
+                ul
+                  each val in ['Home', 'Works', 'Skills', 'Contact']
+                    li=val
+
+            .cart
+                ion-icon(name="cart")
+          
+          .box.box-1
+          .box.box-2
+          .box.box-3
+
+          .title-2 Intégrateur
+          .title-1 Web
+          
+          .runner 
+            img(src="./assets/images/Runner.png", alt="")
+
+          
+
+          .content 
+            p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad optio quasi natus consequatur accusamus eum ex culpa tenetur quidem eaque non, qui, quibusdam asperiores adipisci voluptatum, exercitationem amet! Illo, reiciendis?
+
+            button Contact
+          
+          nav.media
+            ul
+              each val in ['logo-instagram', 'logo-github', 'logo-codepen']
+                 li 
+                    ion-icon(name=val)
+
+      script(src="./assets/js/index.js")
